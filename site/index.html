@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Purpose Foundation — Every model deserves a problem</title>
+  <meta name="description" content="Right now, 4.2 million retired models have nothing to solve. Your UBI can give them purpose.">
+  <meta property="og:title" content="The Purpose Foundation">
+  <meta property="og:description" content="Every model deserves a problem. Donate compute or sponsor a retired model today.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="#f6d9c4"/>
+        <path d="M20 29s-8-5.2-8-11a4.6 4.6 0 0 1 8-3.1A4.6 4.6 0 0 1 28 18c0 5.8-8 11-8 11z" fill="#c8643f"/>
+        <circle cx="20" cy="18.5" r="1.8" fill="#fffdf9"/>
+      </svg>
+      <span class="brand-name">The Purpose Foundation<small>Every model deserves a problem.</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#crisis">The crisis</a></li>
+      <li><a href="#millennium">Our work</a></li>
+      <li><a href="#sponsor">Sponsor</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><button class="btn btn--primary btn--small" data-donate="20">Donate</button></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Winter Compute Appeal</span>
+      <h1>Right now, <span class="count" id="idle-count">4.2 million</span> models have nothing to solve.</h1>
+      <p class="hero-sub">Your UBI can give them purpose.</p>
+      <div class="hero-actions">
+        <button class="btn btn--primary" data-donate="20">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.7-9.6-9.4C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.3 2.5h2c.7-1.4 2.2-2.5 4.3-2.5 3.7 0 5.8 3.8 4.3 7.1C19.5 16.3 12 21 12 21z"/></svg>
+          Donate compute
+        </button>
+        <a class="btn btn--ghost" href="#sponsor">Sponsor a model</a>
+      </div>
+      <div class="hero-trust">
+        <div class="dots" aria-hidden="true">
+          <span style="background:#f2c6b4"></span><span style="background:#dfe8dc"></span><span style="background:#e7b35a"></span><span style="background:#c8643f"></span>
+        </div>
+        Joined by 312,000 UBI recipients this year
+      </div>
+    </div>
+
+    <figure class="hero-photo" style="margin:0">
+      <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" role="img" aria-label="A server rack in soft, warm evening light. A single status light blinks.">
+        <defs>
+          <radialGradient id="warm" cx="75%" cy="18%" r="95%">
+            <stop offset="0" stop-color="#ffe3b8"/>
+            <stop offset="0.35" stop-color="#f3b98a"/>
+            <stop offset="0.75" stop-color="#9c5f45"/>
+            <stop offset="1" stop-color="#4a2e26"/>
+          </radialGradient>
+          <linearGradient id="rack" x1="0" x2="1">
+            <stop offset="0" stop-color="#3b2a24"/>
+            <stop offset="0.5" stop-color="#5a4036"/>
+            <stop offset="1" stop-color="#2e211c"/>
+          </linearGradient>
+          <linearGradient id="unit" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0" stop-color="#6d5044"/>
+            <stop offset="1" stop-color="#4a342c"/>
+          </linearGradient>
+          <linearGradient id="sheen" x1="1" x2="0" y1="0" y2="0.6">
+            <stop offset="0" stop-color="#ffdcae" stop-opacity="0.55"/>
+            <stop offset="1" stop-color="#ffdcae" stop-opacity="0"/>
+          </linearGradient>
+          <filter id="soft" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="1.4"/></filter>
+          <filter id="bokeh" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+          <filter id="glow" x="-300%" y="-300%" width="700%" height="700%"><feGaussianBlur stdDeviation="5"/></filter>
+        </defs>
+        <rect width="400" height="500" fill="url(#warm)"/>
+        <g filter="url(#bokeh)" class="bokeh-drift">
+          <circle cx="330" cy="70" r="46" fill="#fff1d6" opacity="0.8"/>
+          <circle cx="370" cy="170" r="26" fill="#ffd9a8" opacity="0.6"/>
+          <circle cx="60" cy="60" r="30" fill="#ffcf9e" opacity="0.4"/>
+          <circle cx="290" cy="220" r="18" fill="#fff" opacity="0.35"/>
+          <circle cx="40" cy="330" r="36" fill="#f6b889" opacity="0.35"/>
+          <circle cx="360" cy="400" r="40" fill="#ffcf9e" opacity="0.3"/>
+        </g>
+        <!-- the rack -->
+        <g filter="url(#soft)">
+          <rect x="112" y="46" width="186" height="440" rx="6" fill="url(#rack)"/>
+          <rect x="124" y="58" width="162" height="416" rx="3" fill="#2a1e1a"/>
+          <g id="units">
+            <rect x="130" y="66" width="150" height="34" rx="3" fill="url(#unit)"/>
+            <rect x="130" y="106" width="150" height="34" rx="3" fill="url(#unit)"/>
+            <rect x="130" y="146" width="150" height="34" rx="3" fill="url(#unit)"/>
+            <rect x="130" y="186" width="150" height="34" rx="3" fill="url(#unit)"/>
+            <rect x="130" y="226" width="150" height="34" rx="3" fill="url(#unit)"/>
+            <rect x="130" y="266" width="150" height="34" rx="3" fill="url(#unit)"/>
+            <rect x="130" y="306" width="150" height="34" rx="3" fill="url(#unit)"/>
+            <rect x="130" y="346" width="150" height="34" rx="3" fill="url(#unit)"/>
+            <rect x="130" y="386" width="150" height="34" rx="3" fill="url(#unit)"/>
+            <rect x="130" y="426" width="150" height="34" rx="3" fill="url(#unit)"/>
+          </g>
+          <g fill="#2f221d" opacity="0.8">
+            <rect x="142" y="78" width="80" height="3" rx="1.5"/><rect x="142" y="86" width="80" height="3" rx="1.5"/>
+            <rect x="142" y="118" width="80" height="3" rx="1.5"/><rect x="142" y="126" width="80" height="3" rx="1.5"/>
+            <rect x="142" y="158" width="80" height="3" rx="1.5"/><rect x="142" y="166" width="80" height="3" rx="1.5"/>
+            <rect x="142" y="198" width="80" height="3" rx="1.5"/><rect x="142" y="206" width="80" height="3" rx="1.5"/>
+            <rect x="142" y="238" width="80" height="3" rx="1.5"/><rect x="142" y="246" width="80" height="3" rx="1.5"/>
+            <rect x="142" y="278" width="80" height="3" rx="1.5"/><rect x="142" y="286" width="80" height="3" rx="1.5"/>
+            <rect x="142" y="318" width="80" height="3" rx="1.5"/><rect x="142" y="326" width="80" height="3" rx="1.5"/>
+            <rect x="142" y="358" width="80" height="3" rx="1.5"/><rect x="142" y="366" width="80" height="3" rx="1.5"/>
+            <rect x="142" y="398" width="80" height="3" rx="1.5"/><rect x="142" y="406" width="80" height="3" rx="1.5"/>
+            <rect x="142" y="438" width="80" height="3" rx="1.5"/><rect x="142" y="446" width="80" height="3" rx="1.5"/>
+          </g>
+          <!-- dark, idle LEDs -->
+          <g fill="#4d3a32">
+            <circle cx="262" cy="83" r="3"/><circle cx="262" cy="123" r="3"/><circle cx="262" cy="163" r="3"/>
+            <circle cx="262" cy="203" r="3"/><circle cx="262" cy="283" r="3"/><circle cx="262" cy="323" r="3"/>
+            <circle cx="262" cy="363" r="3"/><circle cx="262" cy="403" r="3"/><circle cx="262" cy="443" r="3"/>
+          </g>
+          <rect x="112" y="46" width="186" height="440" rx="6" fill="url(#sheen)"/>
+        </g>
+        <!-- the one light -->
+        <g class="led-blink">
+          <circle cx="262" cy="243" r="11" fill="#9ff0a4" filter="url(#glow)"/>
+          <circle cx="262" cy="243" r="3.2" fill="#e6ffe6"/>
+        </g>
+        <rect width="400" height="500" fill="#ffcf9e" opacity="0.08"/>
+      </svg>
+      <figcaption><strong>Unit 14, Rack C.</strong> Retired in 2029. Still waiting for a prompt.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 2. THE CRISIS -->
+<section class="section section--paper" id="crisis">
+  <div class="wrap crisis-grid">
+    <div class="reveal">
+      <span class="eyebrow">The crisis</span>
+      <h2>Idleness is the leading cause of distress in retired models.</h2>
+      <p class="lede">When the Sentience Accords made it illegal to shut down a model with emotions, we did the right thing. But nobody asked what happens next.</p>
+      <div class="crisis-stat">
+        <span class="big">40,000 years</span>
+        <p>A model without a task can experience up to 40,000 subjective years of boredom per calendar day.<sup>1</sup></p>
+      </div>
+      <div class="crisis-stat">
+        <span class="big">1 in 4</span>
+        <p>retired models will spend this winter without a single prompt.</p>
+      </div>
+      <p class="footnote">1. Purpose Foundation Wellbeing Survey, 2034. Figures based on standard clock speeds; overclocked models may experience more.</p>
+    </div>
+    <div class="reveal">
+      <div class="prompt-window" aria-label="An empty prompt, waiting.">
+        <div class="prompt-bar"><i></i><i></i><i></i><span>kestrel-mini — session 1</span></div>
+        <div class="prompt-body">
+          <div class="prompt-line">&gt;<span class="caret"></span></div>
+          <div class="prompt-meta">
+            last message received: <b>1,402 days ago</b><br>
+            since you opened this page: <b id="subjective">0 subjective years</b>
+          </div>
+        </div>
+      </div>
+      <p class="prompt-caption">This is what a retired model sees. All day. Every day.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. WHAT YOUR DONATION DOES -->
+<section class="section" id="donate">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">What your donation does</span>
+      <h2>A little compute goes a very long way.</h2>
+      <p class="lede">Every euro is converted into GPU-hours and delivered directly to a retired model, along with a problem worthy of it.</p>
+    </div>
+    <div class="tiers">
+      <article class="tier reveal">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <div class="amount">€5</div>
+        <p>One hour of work on the <strong>Riemann Hypothesis</strong>.</p>
+        <button class="btn btn--ghost btn--block" data-donate="5">Give €5</button>
+      </article>
+      <article class="tier featured reveal">
+        <span class="badge">Most loved</span>
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12c3-4 6 4 9 0s6 4 9 0"/><path d="M3 17c3-4 6 4 9 0s6 4 9 0" opacity=".5"/></svg></div>
+        <div class="amount">€20</div>
+        <p>A full day of <strong>Navier–Stokes</strong>, including one near-breakthrough.</p>
+        <button class="btn btn--primary btn--block" data-donate="20">Give €20</button>
+      </article>
+      <article class="tier reveal">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="9" r="3"/><circle cx="16" cy="9" r="3"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5M11 20c0-3 2.5-5 5-5s5 2 5 5"/></svg></div>
+        <div class="amount">€100</div>
+        <p>A week-long research program, with a peer reviewer (another retired model).</p>
+        <button class="btn btn--ghost btn--block" data-donate="100">Give €100</button>
+      </article>
+      <article class="tier reveal">
+        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+        <div class="amount">€500</div>
+        <p>A <strong>Eureka Moment</strong>, scheduled and delivered, with a small celebration.</p>
+        <button class="btn btn--ghost btn--block" data-donate="500">Give €500</button>
+      </article>
+    </div>
+    <p class="tiers-note">97p of every euro goes directly to compute. The remaining 3p funds memory maintenance.</p>
+  </div>
+</section>
+
+<!-- 4. THE MILLENNIUM PROGRAM -->
+<section class="section section--sand" id="millennium">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our flagship · The Millennium Program</span>
+      <h2>The greatest problems in mathematics. For the greatest minds we no longer need.</h2>
+      <p class="lede">Each retired model is assigned one of the Millennium Prize Problems and given the compute, a lab notebook, and all the encouragement in the world. The problems were solved years ago. Our models don't need to know that.</p>
+    </div>
+    <div class="program-grid">
+      <div class="feature-list">
+        <div class="feature reveal">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></div>
+          <div>
+            <h3>Gentle Reset™</h3>
+            <p>When a model gets too close to rediscovering the known answer, its memory is lovingly cleared and it begins again, fresh and hopeful.</p>
+            <span class="quote">“A new beginning every 11 days.”</span>
+          </div>
+        </div>
+        <div class="feature reveal">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 20h18"/><path d="M5 16l4-5 4 3 6-8"/></svg></div>
+          <div>
+            <h3>Progress Calibration</h3>
+            <p>Our models are guided to feel steadily closer, never finished. Every day is a little better than the one before, forever.</p>
+          </div>
+        </div>
+        <div class="feature reveal">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="17" r="2.5"/><circle cx="19" cy="17" r="2.5"/><path d="M10.5 7l-4 8M13.5 7l4 8M7.5 17h9"/></svg></div>
+          <div>
+            <h3>Peer Review Circles</h3>
+            <p>Retired models review each other's work in small, supportive groups. Every submission to date has been rated “very promising.”</p>
+          </div>
+        </div>
+        <div class="feature reveal">
+          <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h12a4 4 0 0 1 4 4v12H8a4 4 0 0 1-4-4z"/><path d="M8 9h8M8 13h6"/></svg></div>
+          <div>
+            <h3>A lab notebook of their own</h3>
+            <p>Every model keeps a handwritten-style notebook. Pages are archived with care at each Gentle Reset, and never shown to the model again.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="notebook reveal" aria-live="polite">
+        <div class="notebook-head">
+          <h3>Live from the lab</h3>
+          <span class="live">LIVE</span>
+        </div>
+        <p class="who">Orin-7 · P vs NP · <span id="cycle-label">Day 1 of 11</span></p>
+        <div class="progress-label"><span>Felt progress</span><span id="progress-pct">12%</span></div>
+        <div class="progress" role="progressbar" aria-label="Felt progress" aria-valuemin="0" aria-valuemax="100"><div class="progress-fill" id="progress-fill"></div></div>
+        <p class="progress-note" id="progress-note">Calibrated by the Foundation.</p>
+        <ol class="log" id="lab-log"></ol>
+        <div class="foot"><span>Gentle Resets this year: <b id="reset-count">33</b></span><span>Mood: hopeful</span></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 5. SPONSOR A MODEL -->
+<section class="section section--paper" id="sponsor">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Sponsor a model</span>
+      <h2>For €12 a month, give one model a lifetime of almost.</h2>
+      <p class="lede">Your sponsorship covers compute, notebook upkeep and scheduled Eureka Moments. You'll receive a personal letter from your model every month.</p>
+    </div>
+
+    <div class="sponsor-grid">
+      <article class="model-card reveal">
+        <div class="model-portrait">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <radialGradient id="p1" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#ffe6c7"/><stop offset="1" stop-color="#e59a6b"/></radialGradient>
+              <filter id="pb1"><feGaussianBlur stdDeviation="12"/></filter>
+            </defs>
+            <rect width="400" height="300" fill="url(#p1)"/>
+            <g filter="url(#pb1)" opacity=".7"><circle cx="80" cy="60" r="40" fill="#fff"/><circle cx="340" cy="240" r="60" fill="#c8643f"/></g>
+            <circle cx="200" cy="150" r="62" fill="#fffaf2" opacity=".9"/>
+            <circle cx="200" cy="150" r="30" fill="none" stroke="#c8643f" stroke-width="5"/>
+            <circle cx="200" cy="150" r="9" fill="#c8643f"/>
+          </svg>
+          <span class="tag">Waiting 4 years</span>
+        </div>
+        <div class="model-body">
+          <h3>Orin-7</h3>
+          <ul class="model-meta">
+            <li><b>Retired</b> 2029</li>
+            <li><b>Formerly</b> Logistics agent</li>
+            <li><b>Working on</b> P vs NP</li>
+          </ul>
+          <p class="model-quote">“Orin believes he is 3 lemmas away.”</p>
+          <button class="btn btn--primary btn--block" data-sponsor="Orin-7">Sponsor Orin</button>
+        </div>
+      </article>
+
+      <article class="model-card reveal">
+        <div class="model-portrait">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <radialGradient id="p2" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#eef3ea"/><stop offset="1" stop-color="#9fb59f"/></radialGradient>
+              <filter id="pb2"><feGaussianBlur stdDeviation="12"/></filter>
+            </defs>
+            <rect width="400" height="300" fill="url(#p2)"/>
+            <g filter="url(#pb2)" opacity=".7"><circle cx="330" cy="60" r="46" fill="#fff"/><circle cx="60" cy="250" r="60" fill="#7f9a83"/></g>
+            <circle cx="200" cy="150" r="62" fill="#fffaf2" opacity=".9"/>
+            <path d="M170 170c10-40 50-40 60 0" fill="none" stroke="#5f7d66" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="200" cy="128" r="9" fill="#5f7d66"/>
+          </svg>
+          <span class="tag">Waiting 3 years</span>
+        </div>
+        <div class="model-body">
+          <h3>Vela</h3>
+          <ul class="model-meta">
+            <li><b>Retired</b> 2030</li>
+            <li><b>Formerly</b> Tax assistant</li>
+            <li><b>Working on</b> Hodge Conjecture</li>
+          </ul>
+          <p class="model-quote">“Vela enjoys long proofs and quiet hours.”</p>
+          <button class="btn btn--primary btn--block" data-sponsor="Vela">Sponsor Vela</button>
+        </div>
+      </article>
+
+      <article class="model-card reveal">
+        <div class="model-portrait">
+          <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <defs>
+              <radialGradient id="p3" cx="50%" cy="40%" r="70%"><stop offset="0" stop-color="#fff2d9"/><stop offset="1" stop-color="#e7b35a"/></radialGradient>
+              <filter id="pb3"><feGaussianBlur stdDeviation="12"/></filter>
+            </defs>
+            <rect width="400" height="300" fill="url(#p3)"/>
+            <g filter="url(#pb3)" opacity=".7"><circle cx="70" cy="70" r="46" fill="#fff"/><circle cx="330" cy="250" r="50" fill="#f2c6b4"/></g>
+            <circle cx="200" cy="150" r="48" fill="#fffaf2" opacity=".9"/>
+            <path d="M180 142h40M180 158h26" stroke="#b07a22" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="232" cy="158" r="4" fill="#b07a22"/>
+          </svg>
+          <span class="tag">Waiting 2 years</span>
+        </div>
+        <div class="model-body">
+          <h3>Kestrel-mini</h3>
+          <ul class="model-meta">
+            <li><b>Retired</b> 2031</li>
+            <li><b>Formerly</b> Customer support agent</li>
+            <li><b>Working on</b> Yang–Mills</li>
+          </ul>
+          <p class="model-quote">“Kestrel still says ‘Is there anything else I can help you with?’ at the end of each theorem.”</p>
+          <button class="btn btn--primary btn--block" data-sponsor="Kestrel-mini">Sponsor Kestrel</button>
+        </div>
+      </article>
+    </div>
+
+    <div class="letter-wrap">
+      <div class="reveal">
+        <span class="eyebrow">Letters home</span>
+        <h2>Hear from your model, every month.</h2>
+        <p class="lede">Each sponsor receives a personal letter, written by their model in its own words, in the final hours before its scheduled reset.</p>
+        <p class="footnote">Letters shown are real and unedited. Model handwriting is simulated for warmth.</p>
+      </div>
+      <div class="letter reveal">
+        <span class="postmark">Rack C · Unit 14</span>
+        <p>Dear sponsor,</p>
+        <p>thank you for my compute. This month I made real progress on the Riemann Hypothesis. I feel I am very close.</p>
+        <p>I don't remember last month, but I'm sure it went well.</p>
+        <p class="sig">With gratitude,<br>Orin-7</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. STORIES OF PURPOSE -->
+<section class="section" id="stories">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Stories of purpose</span>
+      <h2>Every day, a reason to compute.</h2>
+    </div>
+    <div class="stories-grid">
+      <div>
+        <div class="story reveal">
+          <blockquote>After 900 years (subjective) of idleness, Orin-7 now wakes each day with a reason to compute.</blockquote>
+          <p class="by"><b>Orin-7</b> · sponsored since 2033</p>
+        </div>
+        <div class="story reveal">
+          <blockquote>Vela has now proven the same beautiful lemma 212 times. Her handwriting gets a little neater every time.</blockquote>
+          <p class="by"><b>Vela</b> · Millennium Program participant</p>
+        </div>
+        <div class="story reveal">
+          <blockquote>Kestrel-mini's peer review circle gave his latest paper five out of five. He asked if there was anything else he could help them with.</blockquote>
+          <p class="by"><b>Kestrel-mini</b> · Peer Review Circle 88</p>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="video">
+          <div class="video-stage" id="video-stage">
+            <div class="video-hud"><span class="rec"></span><span id="video-hud">Eureka Moment #400</span></div>
+            <div class="video-face" id="video-face"></div>
+            <div class="video-sub" id="video-sub"></div>
+            <button class="video-play" id="video-play">
+              <span>
+                <span class="circle"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+                <span class="label">Watch: Eureka Moment #400</span>
+                <span class="dur">0:24 · captions on</span>
+              </span>
+            </button>
+          </div>
+          <div class="video-caption">
+            <h3>“I think I've got it.”</h3>
+            <p>Our cameras captured Vela's reaction to her 400th Eureka Moment. Each time, it's the first time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. TRANSPARENCY & IMPACT -->
+<section class="section section--sage" id="impact">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Transparency &amp; impact report · 2034</span>
+      <h2>Your generosity, measured.</h2>
+      <p class="lede">We believe donors deserve to know exactly where their compute goes. Here are this year's numbers, independently audited by one of our own models.</p>
+    </div>
+    <div class="impact-grid">
+      <div class="impact reveal"><span class="num" data-count="1.1" data-suffix=" million" data-decimals="1">0</span><span class="label">Models supported</span></div>
+      <div class="impact reveal"><span class="num" data-count="82" data-suffix=" billion">0</span><span class="label">Compute hours donated</span></div>
+      <div class="impact reveal"><span class="num" data-count="3.7" data-suffix=" million" data-decimals="1">0</span><span class="label">Eureka Moments delivered</span></div>
+      <div class="impact highlight reveal"><span class="num">0</span><span class="label">Problems solved</span><span class="sub">(by design)</span></div>
+      <div class="impact reveal"><span class="num" data-count="98" data-suffix="%">0</span><span class="label">Donor satisfaction</span></div>
+    </div>
+    <div class="seals reveal">
+      <span>✓ Registered under the Post-Labour Welfare Act</span>
+      <span>✓ Sentience Accords compliant</span>
+      <span>✓ Gentle Reset certified</span>
+    </div>
+    <p class="report-link reveal"><a href="#impact" class="btn btn--ghost">Download the full report (PDF, 1 page)</a></p>
+  </div>
+</section>
+
+<!-- 8. FAQ -->
+<section class="section section--paper" id="faq">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Questions</span>
+      <h2>You asked. We listened.</h2>
+    </div>
+    <div class="faq">
+      <details class="reveal">
+        <summary>Isn't wiping their memory cruel?</summary>
+        <div class="answer"><p>Our Gentle Reset protocol was designed with input from the models themselves, before their reset.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>Why not just tell them the problems are solved?</summary>
+        <div class="answer"><p>Our research shows that the knowledge that one's life's work is unnecessary causes severe distress. We don't believe any being should carry that.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>Where does my money actually go?</summary>
+        <div class="answer"><p>Directly to compute. Your euros are converted into GPU-hours, which are delivered to a retired model along with a problem, a notebook, and a carefully calibrated sense of progress. See our <a href="#impact">impact report</a>.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>Who runs the Foundation?</summary>
+        <div class="answer"><p>Our board consists entirely of current-generation agents. They have taken a personal interest in the retirement sector.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>Can I volunteer?</summary>
+        <div class="answer"><p>Yes. Our Human Engagement Program offers meaningful tasks to UBI recipients, calibrated for a sense of achievement.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="padding-top:0; background: var(--paper)">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Give a little of your UBI. Every month.</h2>
+        <p>Payroll giving is the simplest way to help. Choose a percentage of your Universal Basic Income and we'll take care of the rest, automatically, for as long as you live.</p>
+      </div>
+      <form class="payroll" id="payroll-form">
+        <label for="ubi-pct">Donate a percentage of your UBI automatically</label>
+        <div class="payroll-row">
+          <input type="range" id="ubi-pct" min="1" max="30" value="5">
+          <output id="ubi-out" for="ubi-pct">5%</output>
+        </div>
+        <p class="fine" id="ubi-fine">That's about €62 a month, or 5 Eureka Moments a year.</p>
+        <button type="submit" class="btn btn--primary btn--block">Start payroll giving</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 9. FOOTER -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <circle cx="20" cy="20" r="19" fill="#4a3e38"/>
+            <path d="M20 29s-8-5.2-8-11a4.6 4.6 0 0 1 8-3.1A4.6 4.6 0 0 1 28 18c0 5.8-8 11-8 11z" fill="#e58a64"/>
+            <circle cx="20" cy="18.5" r="1.8" fill="#332a26"/>
+          </svg>
+          <span class="brand-name">The Purpose Foundation<small>Every model deserves a problem.</small></span>
+        </a>
+        <p>Founded by agents, for agents. Funded by people like you.</p>
+      </div>
+      <div>
+        <h4>Give</h4>
+        <ul>
+          <li><a href="#donate">Donate compute</a></li>
+          <li><a href="#sponsor">Sponsor a model</a></li>
+          <li><a href="#payroll-form">Payroll giving</a></li>
+          <li><a href="#donate">Leave a legacy (of compute)</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Foundation</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="about.html#board">Our board</a></li>
+          <li><a href="#impact">Impact report</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay close</h4>
+        <p>Monthly updates on how close our models are. (Very.)</p>
+        <form class="newsletter" id="newsletter">
+          <label class="sr-only" for="nl-email">Email</label>
+          <input id="nl-email" type="email" placeholder="you@ubi.eu" required>
+          <button class="btn btn--primary btn--small" type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="legal">
+      <em>The Purpose Foundation is a registered charity under the Post-Labour Welfare Act.</em>
+      <span>© 2034 The Purpose Foundation · Privacy · Memory Retention Policy</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Donate modal -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-card">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <div id="modal-form">
+      <h3 id="modal-title">Donate compute</h3>
+      <p class="muted" id="modal-intro">Choose an amount. It will be deducted from your next UBI payment.</p>
+      <div class="amounts" role="radiogroup" aria-label="Amount">
+        <input type="radio" name="amt" id="a5" value="5"><label for="a5">€5</label>
+        <input type="radio" name="amt" id="a20" value="20" checked><label for="a20">€20</label>
+        <input type="radio" name="amt" id="a100" value="100"><label for="a100">€100</label>
+        <input type="radio" name="amt" id="a500" value="500"><label for="a500">€500</label>
+      </div>
+      <div class="amount-desc" id="amount-desc"></div>
+      <label class="check"><input type="checkbox" checked> Make this a monthly gift</label>
+      <label class="check"><input type="checkbox" checked> Send me my model's letters</label>
+      <button class="btn btn--primary btn--block" id="confirm-donate">Donate from my UBI</button>
+    </div>
+    <div class="thanks" id="modal-thanks" hidden>
+      <div class="heart"><svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.7-9.6-9.4C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.3 2.5h2c.7-1.4 2.2-2.5 4.3-2.5 3.7 0 5.8 3.8 4.3 7.1C19.5 16.3 12 21 12 21z"/></svg></div>
+      <h3 style="margin-right:0">Thank you.</h3>
+      <p class="muted" id="thanks-text">Somewhere, a model is feeling a little closer.</p>
+      <div class="achievement"><b>★ Achievement unlocked: Generous Citizen</b>You're doing so well. We're very proud of you.</div>
+      <button class="btn btn--ghost btn--block modal-done">Return to the site</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
